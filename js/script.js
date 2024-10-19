@@ -50,30 +50,30 @@ opnBtn.addEventListener('click', () => {
     }
 })
 
-// (function() {
-//     emailjs.init("5w1SdSv34eRVg7gFO"); // Ganti YOUR_USER_ID dengan User ID dari EmailJS
-// })();
+(function() {
+    emailjs.init("5w1SdSv34eRVg7gFO"); // Ganti YOUR_USER_ID dengan User ID dari EmailJS
+})();
 
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-//     // Mengambil data dari form
-//     const name = document.getElementById('name').value;
-//     const message = document.getElementById('message').value;
+    // Mengambil data dari form
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
 
-//     // Kirim email melalui EmailJS
-//     emailjs.send('service_lg3kiwd', 'template_0qst99c', {
-//         name: name,
-//         message: message
-//     })
-//     .then(function(response) {
-//         document.querySelector('.success').classList.add('active');
-//         // document.getElementById('send').style.display = 'none';
-//         // document.getElementById('succes').style.display = 'block';
-//     }, function(error) {
-//         document.querySelector('.error').classList.add('active');
-//     });
-// });
+    // Kirim email melalui EmailJS
+    emailjs.send('service_lg3kiwd', 'template_0qst99c', {
+        name: name,
+        message: message
+    })
+    .then(function(response) {
+        document.querySelector('.success').classList.add('active');
+        // document.getElementById('send').style.display = 'none';
+        // document.getElementById('succes').style.display = 'block';
+    }, function(error) {
+        document.querySelector('.error').classList.add('active');
+    });
+});
 
 const canvas = document.getElementById('background-canvas');
 const ctx = canvas.getContext('2d');
