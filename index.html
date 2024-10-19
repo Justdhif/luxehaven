@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog - LuxeHaven</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+
+</head>
+<body>
+    
+    <header class="header">
+        <div id="open">
+            <i class="fa-solid fa-bars" id="icon"></i>
+        </div>
+        <a href="#" class="logo">LUXEHAVEN</a>
+        <div class="mode">
+            <div class="moon" onclick="moon()">
+                <i class='bx bx-moon' id="moon"></i>
+            </div>
+            <div class="sun active" onclick="light()">
+                <i class='bx bx-sun' id="sun"></i>
+            </div>
+        </div>
+    </header>
+
+    <aside class="side_bar">
+        <nav>
+            <a href="#home" class="active">
+                <i class="fa-solid fa-house"></i>
+                <div class="tooltip">
+                    <div class="tooltip_text">Home</div>
+                </div>
+            </a>
+            <a href="#services">
+                <i class="fa-solid fa-code"></i>
+                <div class="tooltip">
+                    <div class="tooltip_text">Services</div>
+                </div>
+            </a>
+            <a href="#price">
+                <i class="fa-solid fa-tags"></i>
+                <div class="tooltip">
+                    <div class="tooltip_text">Price</div>
+                </div>
+            </a>
+            <a href="#support">
+                <i class="fa-solid fa-info"></i>
+                <div class="tooltip">
+                    <div class="tooltip_text">Support</div>
+                </div>
+            </a>
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="tooltip">
+                    <div class="tooltip_text">contact</div>
+                </div>
+            </a>
+        </nav>
+    </aside>
+
+    <section class="home" id="home">
+        <div class="desc_catalog">
+            <h3>LuxeHaven Product Catalog</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quae aliquam incidunt! Est ex explicabo iure maiores. Inventore, repellat reiciendis?</p>
+            <a href="#services" class="btn_all">See all</a>
+        </div>
+
+        <div class="bg_catalog">
+            <div class="box_content">
+                <div class="box" style="opacity: 0;"></div>
+                <div class="box" style="transform: rotate(45deg);">
+                    <img src="aset/1.jpg" alt="">
+                </div>
+                <div class="box" style="opacity: 0;"></div>
+            </div>
+            <div class="box_content">
+                <div class="box" style="transform: rotate(45deg);">
+                    <img src="aset/2.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="aset/logo.jpg" alt="">
+                </div>
+                <div class="box" style="transform: rotate(45deg);">
+                    <img src="aset/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="box_content">
+                <div class="box" style="opacity: 0;"></div>
+                <div class="box" style="transform: rotate(45deg);">
+                    <img src="aset/4.jpg" alt="">
+                </div>
+                <div class="box" style="opacity: 0;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h1>M Y S E R V I C E S</h1>
+            <p class="text">What we do?</p>
+        </div>
+        <div class="services_content">
+            <div class="services_box">
+                <div class="dot_content">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="img">
+                    <img src="aset/1.jpg" alt="">
+                </div>
+                <h1>E-Commerce Website</h1>
+                <h3>Contact us?</h3>
+                <div class="sosmed">
+                    <a href="" class="box"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="services_box">
+                <div class="dot_content">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="img">
+                    <img src="aset/2.jpg" alt="">
+                </div>
+                <h1>Design UI/UX</h1>
+                <h3>Contact us?</h3>
+                <div class="sosmed">
+                    <a href="" class="box"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="services_box">
+                <div class="dot_content">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="img">
+                    <img src="aset/3.jpg" alt="">
+                </div>
+                <h1>Profile company</h1>
+                <h3>Contact us?</h3>
+                <div class="sosmed">
+                    <a href="" class="box"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" class="box"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+        <div class="title">
+            <h1>P R I C E L I S T</h1>
+            <p class="text">How much?</p>
+        </div>
+        <div class="price_content">
+            <div class="price_box">
+                <div class="price_icon">
+                    <i class='bx bxs-store-alt' style="background: #203E5F;"></i>
+                    <h3>E-commerce</h3>
+                </div>
+                <h1>IDR. 300.000</h1>
+                <div class="desc_packet">
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum</h3>
+                </div>
+                <div class="btn" style="background: #203E5F;">Order now</div>
+            </div>
+            <div class="price_box">
+                <div class="price_icon">
+                    <i class='bx bx-code-block' style="background: #0084ff;"></i>
+                    <h3>Profile company</h3>
+                </div>
+                <h1>IDR. 300.000</h1>
+                <div class="desc_packet">
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum</h3>
+                </div>
+                <div class="btn" style="background: #0084ff;">Order now</div>
+            </div>
+            <div class="price_box">
+                <div class="price_icon">
+                    <i class='bx bxs-color' style="background: #FF1700;"></i>
+                    <h3>Design UI/UX</h3>
+                </div>
+                <h1>IDR. 300.000</h1>
+                <div class="desc_packet">
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit</h3>
+                    <h3><i class="fa-solid fa-check"></i> Lorem ipsum</h3>
+                </div>
+                <div class="btn" style="background: #FF1700;">Order now</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support" id="support">
+        <canvas id="background-canvas"></canvas>
+        <div class="support_content">
+            <div class="title">
+                <h1>S U P P O R T B Y </h1>
+                <p class="text">Supported!</p>
+            </div>
+            <div class="box">
+                <img src="aset/logo tb.png" alt="" width="10px">
+                <div class="desc">
+                    <h3>SMK TARUNA BHAKTI</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="aset/logo tb.png" alt="" width="10px">
+                <div class="desc">
+                    <h3>SMK TARUNA BHAKTI</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1729325074">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="title">
+            <h1>C O N T A C T U S</h1>
+            <p class="text">Ask me more!</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
